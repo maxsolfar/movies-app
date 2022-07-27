@@ -1,0 +1,272 @@
+.Title {
+  font-size: var(--font-bg);
+  color: var(--clear-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.Container {
+  margin-top: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--main-bg-color);
+  padding: 15px;
+}
+
+.Input {
+  background-color: #1f1436;
+  padding: 15px 30px;
+  border-style: none;
+  border-bottom: 1px solid #7259ef;
+  color: var(--clear-color);
+  font-size: var(--font-md);
+  border-radius: 10px;
+}
+
+.Input:focus {
+  transition: all 0.9s ease-in;
+  border-style: none;
+  border-bottom: 1px solid #7259ef;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Input::placeholder {
+  color: var(--clear-color);
+  font-size: 0.9em;
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+.inputButton {
+  transition: all 0.5s ease-in;
+  padding: 10px 15px;
+  font-weight: 700;
+  border: 1px solid var(--clear-color);
+  border-radius: 10px;
+}
+
+.inputButton:hover {
+  transition: all 0.5s ease-in;
+  color: var(--white-font-color);
+  border: 1px solid var(--clear-color);
+  background-color: rgba(21, 21, 21, 0.7);
+  cursor: pointer;
+}
+
+.pin {
+  transition: all 0.5s ease-in;
+  width: 28px;
+  fill: var(--dark-color);
+  stroke: var(--dark-color);
+}
+
+.pin:hover {
+  transition: all 0.5s ease-in;
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+.NewMovies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
+  opacity: 0.8;
+}
+.NewMovies img{
+  width: 200px;
+}
+.NewMovies h5{
+  color: var(--clear-color);
+  font-size: var(--font-lg);
+  font-weight: 700;
+}
+
+.Movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.MoviesCard {
+  padding: 10px;
+
+}
+
+.CardImg {
+  border-radius: 30px;
+  position: relative;
+  width: 280px;
+  height: 395px;
+}
+
+.CardOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: 0.5s ease;
+  background: linear-gradient(180deg,rgba(20,12,40,.9), transparent);
+}
+
+.ContainerOverlay {
+  position: relative;
+}
+
+.ContainerOverlay .CardOverlay {
+  transition: 0.9s ease-in-out;
+  border: 1px solid var(--accent-color);
+  border-radius: 30px;
+}
+
+.ContainerOverlay:hover .CardOverlay {
+  transition: 0.8s ease-in-out;
+  
+  opacity: 0.98;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 15px 10px 15px;
+}
+
+.CardTitle {
+  transition: 0.9s ease-in-out;
+  color: var(--clear-color);
+  font-size: var(--font-md);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.CardTitle2 {
+  transition: 0.9s ease-in-out;
+  position: absolute;
+  color: var(--clear-color);
+  font-size: var(--font-md);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.CardTitle2:hover {
+  transition: 0.5s ease-in-out;
+  color: var(--accent-color);
+}
+
+.MovieDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.MovieDetails .CardType {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-sm);
+  padding: 3px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+}
+
+.MovieDetails .CardYear {
+  color: var(--clear-color);
+  font-size: var(--font-md);
+  font-weight: 700;
+}
+
+
+
+
+/* .buttonFav {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: var(--clear-color);
+  font-size: var(--font-sm);
+  font-weight: 400;
+}
+
+.buttonFav svg {
+  transition: 0.9s ease-in-out;
+  fill: transparent;
+  stroke: var(--clear-color);
+}
+
+.buttonFav svg:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
+  fill: var(--clear-color);
+  stroke: var(--accent-color);
+} */
+
+
+
+.buttonFav2 {
+  background-color: var(--accent-color);
+  border-style: none;
+ /*  border-style: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  padding: 8px;
+  color: var(--clear-color);
+  font-size: var(--font-sm);
+  font-weight: 400;
+
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.buttonFav2 svg {
+  transition: 0.9s ease-in-out;
+
+}
+
+.buttonFav2 svg:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
+  fill: #fbc02d;
+  stroke: #fbc02d;
+}
+
+

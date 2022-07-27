@@ -1,0 +1,48 @@
+.MainContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--dark-color);
+}
+
+/* .ContainerTop {
+    grid-area: 1 / 1 / 2 / 13;
+
+} */
+.ContainerLeft {
+  grid-area: 1 / 1 / 13 / 2;
+  margin: 30px 0px 30px 30px;
+
+  text-align: center;
+
+}
+
+.ContainerRight {
+  grid-area: 1 / 2 / 13 / 13;
+  /* background-color: #1F1436; */
+  margin: 30px;
+  border-radius: 20px;
+  position: relative;
+  /*     border: 2px solid #7259EF; */
+  background-image: url(./img/background.png);
+}
+
+@media screen and (max-width: 600px) {
+  .MainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerLeft {
+    margin: 10px;
+    height: auto;
+  }
+  .ContainerRight {
+    margin: 10px 10px 10px 10px;
+    height: 100vh;
+  }
+}

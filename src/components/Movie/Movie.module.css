@@ -1,0 +1,151 @@
+.Title {
+  font-size: var(--font-bg);
+  color: var(--clear-color);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.TitleSeparator{
+  width: 30%;
+}
+
+.Container{
+  display: flex;
+  justify-content: center;
+  color:var(--clear-color);
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 20px;
+
+}
+
+
+
+.TitleMovie{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+.TitleMovie h2{
+  font-size: var(--font-bg);
+  max-width: 30rem;
+  line-height: 3.8rem;
+}
+.TitleMovie b{
+  border: 1px solid var(--accent-color);
+  font-size: var(--font-xsm);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+
+.Details1{
+  display: flex;
+  flex-direction: column;
+}
+
+.Details1 img{
+  border-radius: 30px;
+  align-self: center;
+}
+
+.Runtime{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Runtime span{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--clear-color);
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+
+.Gnere{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.GnereSpan{
+  font-size: var(--font-md);
+  font-weight: 700;
+  color: var(--clear-color)
+}
+
+.GnereType{
+  font-size: var(--font-xsm);
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(114, 89, 239, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.GnereTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+.Details2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 60rem;
+}
+
+
+.Text{
+  font-size: var(--font-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+}
+
+.Text b{
+  font-size: var(--font-md);
+  color: var(--accent-color);
+}
+
+.Plot{
+  font-size: var(--font-lg);
+  text-align: center;
+}
+
+.RatingsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.Rating span{
+    display: flex;
+    grid-gap: 5px;
+    gap: 5px;
+    align-items: center;
+    color: var(--clear-color);
+    font-size: var(--font-sm);
+    font-weight: 600;
+}

@@ -1,0 +1,77 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.Logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .Logo{
+    display: none;
+  }
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #1f1436;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  width: auto;
+  height: 450px;
+
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .List {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding:20px;
+    height: auto;
+  }
+  .List a:last-child {
+    display: none;
+  }
+}
+
+.List li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.List a {
+  color: #6b6578;
+  text-decoration: none;
+  font-size: var(--font-sm);
+}
+
+
+.List li > svg,
+li > span{
+    transition: 0.9s ease-in-out;
+}
+
+.List li:hover > svg,
+li:hover > span {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--clear-color);
+  fill: var(--clear-color);
+}
+

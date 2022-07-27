@@ -1,0 +1,47 @@
+:root{
+  --dark-color:#140C28;
+  --clear-color:#FEFFFE; 
+  --accent-color: #7259EF;
+  --error-color: #d52023; 
+
+  /* ?Fonts*/
+  --font-xsm: 1.1rem;
+  --font-sm: 1.4rem; 
+  --font-md: 1.8rem; 
+  --font-lg: 2.4rem; 
+  --font-bg: 3.2rem; 
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+}
+
+hr{
+  border: 0.5px solid rgba(114, 89, 239, 0.3);
+  width: 100%;
+}
+
+body {
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark-color);
+ 
+}
+
